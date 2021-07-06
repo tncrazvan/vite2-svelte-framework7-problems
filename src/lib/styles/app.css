@@ -1,0 +1,75 @@
+
+html{
+  overscroll-behavior: none;
+}
+/* Custom color theme properties */
+/*:root {
+  --f7-theme-color: #F17010;
+  --f7-theme-color-rgb: 241, 112, 16;
+  --f7-theme-color-shade: #cc5e0c;
+  --f7-theme-color-tint: #f38737;
+}*/
+
+/* Your app custom styles here */
+/*# sourceMappingURL=app.css.map */
+
+.full-width{
+  width: 100%;
+}
+.full-height{
+  height: 100%;
+}
+.border-radius-0{
+  border-radius: 0;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background: rgba(0,0,0,0.125);
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.grid-x-center{
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+.grid-x-left{
+  display: grid;
+  justify-self: left;
+  justify-items: left;
+  justify-content: left;
+}
+.grid-x-right{
+  display: grid;
+  justify-self: right;
+  justify-items: right;
+  justify-content: right;
+}
+.grid-y-center{
+  display: grid;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+.grid-y-top{
+  display: grid;
+  align-self: start;
+  align-items: start;
+  align-content: start;
+}
+.grid-y-bottom{
+  display: grid;
+  align-self: end;
+  align-items: end;
+  align-content: end;
+}
