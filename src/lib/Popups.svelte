@@ -82,38 +82,39 @@
     
   
   
-  <script>
-    import {f7, Page, Navbar, Block, Button, Popup, NavRight, Link, BlockTitle} from 'framework7-svelte';
+<script lang="ts">
+import {f7, Page, Navbar, Block, Button, Popup, NavRight, Link, BlockTitle} from 'framework7-svelte';
+import { onMount } from 'svelte';
   
-    let popupOpened = false;
-    let popup;
-  
-    function createPopup() {
-      // Create popup
-      if (!popup) {
-        popup = f7.popup.create({
-          content: `
-            <div class="popup">
-              <div class="page">
-                <div class="navbar">
-                  <div class="navbar-bg"></div>
-                  <div class="navbar-inner">
-                    <div class="title">Dynamic Popup</div>
-                    <div class="right"><a href="#" class="link popup-close">Close</a></div>
-                  </div>
-                </div>
-                <div class="page-content">
-                  <div class="block">
-                    <p>This popup was created dynamically</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.</p>
-                  </div>
-                </div>
+let popupOpened = false;
+let popup;
+
+function createPopup() {
+  // Create popup
+  if (!popup) {
+    popup = f7.popup.create({
+      content: `
+        <div class="popup">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="title">Dynamic Popup</div>
+                <div class="right"><a href="#" class="link popup-close">Close</a></div>
               </div>
             </div>
-          `.trim(),
-        });
-      }
-      // Open it
-      popup.open();
-    }
-  </script>
+            <div class="page-content">
+              <div class="block">
+                <p>This popup was created dynamically</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `.trim(),
+    });
+  }
+  // Open it
+  popup.open();
+}
+</script>

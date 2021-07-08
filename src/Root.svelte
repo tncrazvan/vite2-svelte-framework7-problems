@@ -7,8 +7,8 @@
         androidOverlaysWebView: false,
     }}
 >
-    <Sheets/>
-    <!-- <Popups /> -->
+    <!-- <Sheets/> -->
+    <Popups />
 </App>
 
 <script lang="ts">
