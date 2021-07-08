@@ -7,10 +7,12 @@
         androidOverlaysWebView: false,
     }}
 >
-    <Popups />
+    <Sheets/>
+    <!-- <Popups /> -->
 </App>
 
 <script lang="ts">
 import { App,Button } from 'framework7-svelte';
 import Popups from './lib/Popups.svelte';
+import Sheets from './lib/Sheets.svelte';
 </script>
