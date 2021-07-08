@@ -1,4 +1,4 @@
-import Framework7 from 'framework7/lite';
+import Framework7 from 'framework7/lite-bundle';
 import Framework7Svelte from "framework7-svelte";
 import Root from './Root.svelte'
 
